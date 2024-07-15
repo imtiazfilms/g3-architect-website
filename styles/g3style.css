@@ -123,8 +123,80 @@
 }
 
 
-
-
+/* feature styles */
+.feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 130px;
+    gap: 125px;
+}
+.feature-content {
+    max-width: 586px;
+    margin: 0 auto;
+    padding-top: 39px;
+}
+.feature-title {
+    border-left: 5px solid rgb(255, 144, 14);
+    font-size: 2.81rem;
+    font-weight: 700;
+    padding-left: 21px;
+}
+.feature-dispriction {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 24px;
+    margin-bottom: 60px;
+}
+.card {
+    max-width: 586px;
+    max-height: 171px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 23px;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.card-discription {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.feature-image {
+    max-width: 708px;
+    max-height: 982px;
+    margin: 0 auto;
+    border-radius: 8px;   
+    margin-bottom: 80px;
+    
+}
+.feature-image img {
+    width: 100%;
+    height: 100%;
+}
+.experiance-btn {
+    max-width: 342px;
+    max-height: 200px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 46px 42px 45px 42px;
+    border: none;
+    margin-top: -110px;
+    margin-left: -80px;
+}
+#year {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255); 
+}
+#experiance {
+    font-size: 1.56rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
 /* responsive styles */
 @media screen and (max-width: 576px) {
     .nav{
@@ -149,5 +221,25 @@
     .our-feature-content {
         margin-left: 4px;
         margin: 20px;
+    }
+    .feature-container {
+        flex-direction: column;
+        margin-top: 65px;
+    }
+    .experiance-btn {
+        margin-top: -90px;
+        margin-left: 23px;
+    }
+    .feature-content {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px)  {
+    .our-feature-container {
+        flex-direction: column;
+    }
+    .our-feature-images {
+        gap: 1px;
     }
 }
